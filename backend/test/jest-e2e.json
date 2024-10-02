@@ -1,0 +1,21 @@
+{
+  "moduleFileExtensions": [
+    "js",
+    "json",
+    "ts"
+  ],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "@app/common/(.*)": "<rootDir>/../libs/common/src/$1",
+    "@app/common": "<rootDir>/../libs/common/src",
+    "@app/gpx/(.*)": "<rootDir>/../libs/gpx/src/$1",
+    "@app/gpx": "<rootDir>/../libs/gpx/src",
+    "@app/testing/(.*)": "<rootDir>/../libs/testing/src/$1",
+    "@app/testing": "<rootDir>/../libs/testing/src"
+  }
+}

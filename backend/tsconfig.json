@@ -1,0 +1,57 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "strict": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@core": ["src"],
+      "@core/*": ["src/*"],
+      "@test/*": ["test/*"],
+      "@test": ["test"],
+      "@app/common": [
+        "libs/common/src"
+      ],
+      "@app/common/*": [
+        "libs/common/src/*"
+      ],
+      "@app/gpx": [
+        "libs/gpx/src"
+      ],
+      "@app/gpx/*": [
+        "libs/gpx/src/*"
+      ],
+      "@app/testing": [
+        "libs/testing/src"
+      ],
+      "@app/testing/*": [
+        "libs/testing/src/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "test",
+    "libs"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "files": ["test/global.d.ts"]
+}
